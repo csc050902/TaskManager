@@ -15,7 +15,6 @@ class TaskManagerSeApplicationTests {
 
     @Autowired
     private UserController userController;
-
     @Test
     public void registerSuccess(){
         UserDTO userDTO = new UserDTO();
@@ -39,7 +38,7 @@ class TaskManagerSeApplicationTests {
     public void loginError(){
         UserDTO userDTO = new UserDTO();
         userDTO.setUsername("123");
-        userDTO.setPassword("1234");
+        userDTO.setPassword("123");
         String actual = userController.login(userDTO);
         String expected =  "登录成功";
         assertEquals(expected,actual);
