@@ -25,8 +25,6 @@ class TaskManagerSeApplicationTests {
         String expected = "注册成功";
         assertEquals(expected,actual);
     }
-
-
     @Test
     public void loginSuccess(){
         UserDTO userDTO = new UserDTO();
@@ -37,7 +35,6 @@ class TaskManagerSeApplicationTests {
         String actual = userController.login(userDTO);
         assertEquals(expected,actual);
     }
-
     @Test
     public void loginError(){
         UserDTO userDTO = new UserDTO();
@@ -47,5 +44,4 @@ class TaskManagerSeApplicationTests {
         String expected =  "登录成功";
         assertEquals(expected,actual);
     }
-
 }
