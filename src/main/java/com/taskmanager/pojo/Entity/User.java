@@ -9,7 +9,6 @@ import lombok.Data;
 @Data
 @TableName("user")
 public class User {
-
     @TableId(value = "id",type = IdType.AUTO)
     public int id;
 
